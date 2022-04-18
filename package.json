@@ -5,8 +5,13 @@
     "node": ">=14.x"
   },
   "dependencies": {
+    "ascii-art": "^2.8.5",
     "colors": "^1.4.0",
+    "jest": "^27.5.1",
     "prompt-sync": "^4.2.0",
     "prompt-sync-history": "^1.0.1"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
