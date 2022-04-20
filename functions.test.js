@@ -7,7 +7,7 @@ let routeAbsoluteExists = '/Users/usuario/Desktop/Laboratoria/SCL019-md-links/RE
 
 describe('la ruta es absoluta o no', () => {
     test('debería retornar true si es absoluta', () => {
-        let isAbsolute =  functions.questionIsAbsolute(routeAbsoluteExists);
+        let isAbsolute = functions.questionIsAbsolute(routeAbsoluteExists);
         expect(isAbsolute).toBe(true);
     });
     test('debería retornar false si es relativa', () => {
@@ -23,7 +23,7 @@ describe('convertir ruta relativa a absoluta', () => {
     });
 });
 
-describe('si la ruta es relativa debería retornar la función pathConvertedToAbsolute si no, retorna la ruta intacta', () =>{
+describe('si la ruta es relativa debería retornar la función pathConvertedToAbsolute si no, retorna la ruta intacta', () => {
     test('si la ruta es relativa debería retornar la funcón pathConvertedToAbsolute', () => {
         let routeRelative = functions.pathAbsoluteOrRelative(routeRelativeExists);
         expect(routeRelative).toBe(routeAbsoluteExists); //no retorna lo que se espera
@@ -42,7 +42,7 @@ describe('verificar si el archivo existe o no', () => {
     test('si la ruta no existe debería retornar false', () => {
         let routeNotExist = functions.fileExists(routeAbsoluteNotExist)
         expect(routeNotExist).toBe(false);
-    })
+    });
 });
 
 describe('obtener la extensión del archivo', () => {

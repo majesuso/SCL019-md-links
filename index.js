@@ -7,10 +7,8 @@ let pathValue = prompt('Ingresa la ruta del archivo: '.magenta);
 console.log(`Ruta ingresada: '${pathValue}'`.white);
 
 let pathTransformed = functions.pathAbsoluteOrRelative(pathValue);
-//console.log(`pathTransformed1 retorna: ${pathTransformed}`.white);
 
 pathTransformed = functions.pathNormalize(pathTransformed);
-//console.log(`pathTransformed2 retorna: ${pathTransformed}`);
 functions.fileExists(pathTransformed);
 functions.pathExtName(pathTransformed);
 functions.fileAccess(pathTransformed);

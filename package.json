@@ -12,6 +12,6 @@
     "prompt-sync-history": "^1.0.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --verbose"
   }
 }
